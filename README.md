@@ -1,5 +1,6 @@
 procfs
 ======
+foo
 
 [![Crate](https://img.shields.io/crates/v/procfs.svg)](https://crates.io/crates/procfs)
 [![Docs](https://docs.rs/procfs/badge.svg)](https://docs.rs/procfs)
