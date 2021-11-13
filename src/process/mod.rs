@@ -60,10 +60,12 @@ use std::ffi::OsString;
 use std::fs;
 use std::fs::read_link;
 use std::io::{self, Read};
-#[cfg(target_os = "android")]
-use std::os::android::fs::MetadataExt;
-#[cfg(all(unix, not(target_os = "android")))]
+#[cfg(target_os = "freebsd")]
+use std::os::freebsd::fs::MetadataExt;
+#[cfg(target_os = "linux")]
 use std::os::linux::fs::MetadataExt;
+#[cfg(target_os = "macos")]
+use std::os::unix::fs::MetadataExt;
 use std::path::PathBuf;
 use std::str::FromStr;
 
